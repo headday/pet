@@ -1,0 +1,20 @@
+{
+  "name": "slack",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "entities"
+  ],
+  "scripts": {
+    "dev:frontend": "yarn workspace @slack/frontend start",
+    "dev:backend": "yarn workspace @slack/backend start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {}
+}
